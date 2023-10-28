@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Digital grading system</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <style>
+            body {
+                background-color: #f3ebeb; 
+                background-image: url("{{ url_for('static', filename='background.jpg') }}");
+                background-repeat: no-repeat;
+                background-size: cover; /* Adjust this to control how the image covers the background */
+                background-attachment: fixed; /* Fixed background image */
+                background-position: center; /* Center the image */
+                  /* Adjust the size to cover the entire body */
+            }
+    
+            .navbar {
+                background-color:rgb(132, 6, 194); /* Black background for the navbar */
+            }
+    
+            .navbar a {
+                color: rgb(37, 32, 32); /* Text color for navbar links */
+            }
+    
+            .container {
+                background-color: #fff; /* White background for the login form */
+                padding: 10px 20px ;
+                border-radius: 100px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand text-black" href="#" >Digital Grading System</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('login') }}">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    <h1 style="text-align: left;color: rgb(15, 10, 10);padding: 150px 30px;font-weight:100%;font-size: 75px;"> Welcome to the <br> Digital Grading  System</h1>
+    <!-- <img src="{{ url_for('static', filename='example.jpg') }}" alt="Example Image" width="300" height="200"> -->
+    <!-- Add this code block where you want to display the images -->
+</div>
+</body>
+</html>

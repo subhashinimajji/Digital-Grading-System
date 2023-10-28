@@ -1,0 +1,66 @@
+<!-- templates/login.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Digital grading system</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <style>
+            body {
+                background-color: #f3ebeb; 
+                background-image: url("{{ url_for('static', filename='login.jpg') }}");
+                background-repeat: no-repeat;
+                background-size: cover; /* Adjust this to control how the image covers the background */
+                background-attachment: fixed; /* Fixed background image */
+                background-position: center; /
+
+                  /* Adjust the size to cover the entire body */
+            }
+    
+            .navbar {
+                background-color: #110e0e; /* Black background for the navbar */
+            }
+    
+            .navbar a {
+                color: rgb(37, 32, 32); /* Text color for navbar links */
+            }
+    
+            .container {
+                background-color: #fff; /* White background for the login form */
+                padding: 100px;
+                border-radius: 50px;
+            }
+            .a{
+                color: #110e0e;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <br>
+        <br>
+        <br>
+        <br>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <h2 class="text-center">Login</h2>
+                <form method="post">
+                    <div class="form-group">
+                        <label>Username</label>
+                        <input type="text" name="username" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" name="password" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Login</button>
+                    <br><br>
+                    <a href="{{ url_for('home') }}">Home</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

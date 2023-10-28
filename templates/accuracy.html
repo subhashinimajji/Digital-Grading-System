@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grading Results</title>
+    <style>
+        body{ 
+          background-color:rgb(230, 247, 247);
+        }
+        /* Your styles here */
+        .container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+        .text-box {
+          border: 1px solid #ccc;
+          padding: 10px;
+          flex: 1;
+        }
+      </style>
+</head>
+<body>
+    <center>
+        <h1 style="color:red;">Subjective Paper Evaluation</h1>
+        <div class="container">
+          <h1>Grading Accuracy</h1>
+          <div class="text-container">
+            <div class="text-box">
+                <br>
+                <div class="text-box">
+                  <h2> Model Score</h2>
+                  <p>{{ model_score }}</p>
+                </div>
+                <br>
+                <br>
+                <div class="text-box">
+                  <h2> Manual Score</h2>
+                  <p>{{ manual_score }}</p>
+                </div>
+                <br>
+                <br>
+                <div class="text-box">
+                  <h2> Accuracy</h2>
+                  <p>{{ accuracy }}</p>
+                </div>
+                <br>
+          </div>
+        </div>
+        <br>
+        <a href="{{ url_for('image_x') }}">click here to Upload another Answer</a>
+      </center>
+      
+</body>
+</html>
